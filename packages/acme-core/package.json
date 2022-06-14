@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./src/index.tsx",
   "sideEffects": false,
   "license": "MIT",
   "files": [
-    "dist/**"
+    "dist/**",
+    "src/**"
   ],
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
